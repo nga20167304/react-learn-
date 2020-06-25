@@ -32,7 +32,7 @@ class UserGreeting extends Component {
         return(
             this.state.isLoggedIn ?
             <div>Welcome</div> :
-            <div>Welcome Guest</div>
+            <div>Welcome Guestt</div>
         )
     }
 }
