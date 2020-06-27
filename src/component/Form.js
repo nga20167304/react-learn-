@@ -30,23 +30,24 @@ class Form extends Component{
         event.preventDefault()
     }
     render(){
+        const {username, comment, topic} = this.state
         return(
             <form onSubmit = {this.handleSubmit}>
                 <div>
                     <label>Username: </label>
-                    <input type = "text" value = {this.state.username} 
+                    <input type = "text" value = {username} 
                     onChange = {this.handleUsernameChange} />
                 </div>
                 <br></br>
                 <div>
                     <label>Comment: </label>
-                    <textarea value = {this.state.comment} 
+                    <textarea value = {comment} 
                     onChange = {this.handleCommentChange}></textarea>
                 </div>
                 <br></br>
                 <div>
                     <label>Topic: </label>
-                    <select value = {this.state.topic} onChange = {this.handleTopicChange}>
+                    <select value = {topic} onChange = {this.handleTopicChange}>
                         <option value="react">React</option>
                         <option value="angular">Angular</option>
                         <option value="vue">Vue</option>
