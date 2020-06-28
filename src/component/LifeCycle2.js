@@ -16,6 +16,17 @@ class LifeCycle2 extends Component{
     componentDidMount(){
         console.log('LifeCycle 2 componentDidMount')
     }
+    shouldComponentUpdate(){
+        console.log('LifeCycle 2 shouldComponentUpdate')
+        return true
+    }
+    getSnapshotBeforeUpdate(prevProps, prevState){
+        console.log('LifeCycle 2 getSnapshotBeforeUpdate')
+        return null
+    }
+    componentDidUpdate(){
+        console.log('LifeCycle 2 componentDidUpdate')
+    }
     render(){
         console.log('LifeCycle 2 render')
         return(
