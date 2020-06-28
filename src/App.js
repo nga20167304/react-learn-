@@ -17,6 +17,7 @@ import './App.css';
 import './appStyles.css'
 import styles from './appStyles.module.css'
 import Form from './component/Form'
+import LifeCycle1 from './component/LifeCycle1'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <h1 className ='error'>Error</h1>
       <h1 className={styles.sucess}>Sucess</h1>
       <Form />
+      <LifeCycle1 />
       {/* <StyleSheet primary={true}/>
       <Inline /> */}
       {/* <NameList /> */}
